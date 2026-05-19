@@ -47,7 +47,7 @@ export default function StatsCounter() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/assets/project-1.jpg"
+          src="assets/project-1.jpg"
           alt="Atelier mécanique"
           loading="lazy"
           decoding="async"

@@ -48,7 +48,7 @@ export default function Appointment() {
 
           <div className="absolute inset-0 flex items-end justify-center lg:justify-start lg:pl-8">
             <img
-              src="/assets/appointment-mechanic.png"
+              src="assets/appointment-mechanic.png"
               alt="Mécanicien professionnel"
               loading="lazy"
               decoding="async"

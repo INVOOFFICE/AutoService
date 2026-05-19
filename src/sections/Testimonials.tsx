@@ -47,7 +47,7 @@ export default function Testimonials() {
         {/* Left - Image */}
         <ScrollReveal direction="left" className="relative min-h-[400px] lg:min-h-[550px]">
           <img
-            src="/assets/testimonial-bg.jpg"
+            src="assets/testimonial-bg.jpg"
             alt="Atelier mécanique"
             loading="lazy"
             decoding="async"

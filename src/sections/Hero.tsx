@@ -31,7 +31,7 @@ export default function Hero() {
         className="absolute inset-0"
       >
         <img
-          src="/assets/hero-bg.jpg"
+          src="assets/hero-bg.jpg"
           alt="Mécanicien travaillant sur un moteur de voiture"
           className="w-full h-full object-cover"
         />
