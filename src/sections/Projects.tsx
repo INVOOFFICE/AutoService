@@ -3,40 +3,42 @@ import Container from '../components/Container';
 import SectionLabel from '../components/SectionLabel';
 import ScrollReveal from '../components/ScrollReveal';
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 const services = [
   {
     icon: Activity,
-    image: '/assets/project-1.jpg',
+    image: `${BASE_URL}assets/project-1.jpg`,
     title: 'Diagnostic Auto',
     category: 'Diagnostic complet',
   },
   {
     icon: Zap,
-    image: '/assets/project-2.jpg',
+    image: `${BASE_URL}assets/project-2.jpg`,
     title: 'Électricité Auto',
     category: 'Systèmes électriques',
   },
   {
     icon: Wrench,
-    image: '/assets/project-3.jpg',
+    image: `${BASE_URL}assets/project-3.jpg`,
     title: 'Réparation Mécanique',
     category: 'Toutes marques',
   },
   {
     icon: Droplets,
-    image: '/assets/about-secondary.jpg',
+    image: `${BASE_URL}assets/about-secondary.jpg`,
     title: 'Vidange',
     category: 'Entretien régulier',
   },
   {
     icon: Wind,
-    image: '/assets/hero-bg.jpg',
+    image: `${BASE_URL}assets/hero-bg.jpg`,
     title: 'Climatisation',
     category: 'Recharge & réparation',
   },
   {
     icon: Filter,
-    image: '/assets/whatwedo-center.jpg',
+    image: `${BASE_URL}assets/whatwedo-center.jpg`,
     title: 'Nettoyage FAP',
     category: 'Sans démontage',
   },
