@@ -57,7 +57,7 @@ export default function WhatWeDo() {
             <div className="relative">
               <div className="w-[320px] h-[320px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden border-4 border-fixturbo-primary shadow-xl">
                 <img
-                  src="assets/whatwedo-center.jpg"
+                  src={`${import.meta.env.BASE_URL}assets/whatwedo-center.jpg`}
                   alt="Mécanicien professionnel"
                   loading="lazy"
                   decoding="async"

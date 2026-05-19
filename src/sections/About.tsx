@@ -27,7 +27,7 @@ export default function About() {
               {/* Main Image */}
               <div className="relative rounded-lg overflow-hidden">
                 <img
-                  src="assets/about-main.jpg"
+                  src={`${import.meta.env.BASE_URL}assets/about-main.jpg`}
                   alt="Mécanicien au travail"
                   loading="lazy"
                   decoding="async"
@@ -44,7 +44,7 @@ export default function About() {
               {/* Secondary Image */}
               <div className="relative mt-6 rounded-lg overflow-hidden max-w-[80%]">
                 <img
-                  src="assets/about-secondary.jpg"
+                  src={`${import.meta.env.BASE_URL}assets/about-secondary.jpg`}
                   alt="Voiture sur pont élévateur"
                   loading="lazy"
                   decoding="async"

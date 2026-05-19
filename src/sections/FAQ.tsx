@@ -99,7 +99,7 @@ export default function FAQ() {
           <ScrollReveal direction="right" className="relative">
             <div className="relative rounded-lg overflow-hidden">
               <img
-                src="assets/faq-mechanic.jpg"
+                src={`${import.meta.env.BASE_URL}assets/faq-mechanic.jpg`}
                 alt="Female mechanic"
                 loading="lazy"
                 decoding="async"
