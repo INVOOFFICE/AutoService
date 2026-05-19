@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 349 85% 49%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 97%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 0 0% 97%;
+    --accent-foreground: 0 0% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 349 85% 49%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer utilities {
+  .text-shadow-hero {
+    text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+  }
+  .gear-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M30 0l2 8h-4l2-8zm0 60l-2-8h4l-2 8zM0 30l8-2v4l-8-2zm60 0l-8 2v-4l8 2zM8.8 8.8l5.7 5.7-2.8 2.8-5.7-5.7 2.8-2.8zm42.4 42.4l-5.7-5.7 2.8-2.8 5.7 5.7-2.8 2.8zM8.8 51.2l5.7-5.7-2.8-2.8-5.7 5.7 2.8 2.8zm42.4-42.4l-5.7 5.7 2.8 2.8 5.7-5.7-2.8-2.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .diagonal-stripes {
+    background: repeating-linear-gradient(
+      -15deg,
+      transparent,
+      transparent 20px,
+      rgba(255,255,255,0.08) 20px,
+      rgba(255,255,255,0.08) 40px
+    );
+  }
+}
